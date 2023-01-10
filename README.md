@@ -1,4 +1,10 @@
-## Datos históricos del Precio Voluntario para el Pequeño Consumidor (PVPC)
+## *Datos históricos del Precio Voluntario para el Pequeño Consumidor (PVPC)*
+
+Desde el 2018 a 2022 en carpeta ```data```.
+
+Para descargar otros periodos, utilizar el código ```Main.py```.
+
+<hr>
 
 ### Significado columnas:
 - __PCB:__ PENÍNSULA, BALEARES Y CANARIAS (PEAJE 2.0 TD)
@@ -25,5 +31,5 @@
 - __EDCGASPCB:__ EXCEDENTE O DÉFICIT MECANISMO AJUSTE COSTE PRODUCCIÓN (PCB)
 - __EDCGASCYM:__ EXCEDENTE O DÉFICIT MECANISMO AJUSTE COSTE PRODUCCIÓN (CYM)
 
-
-Extraidos de: https://www.esios.ree.es/es
+<hr>
+Datos extraidos de: https://www.esios.ree.es/es
