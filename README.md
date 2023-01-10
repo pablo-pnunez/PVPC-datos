@@ -1,3 +1,4 @@
+
 # Significado columnas:
 - __PCB:__ PENÍNSULA, BALEARES Y CANARIAS (PEAJE 2.0 TD)
 - __CYM:__ CEUTA Y MELILLA (PEAJE 2.0 TD)
