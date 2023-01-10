@@ -2,7 +2,7 @@ from tqdm import tqdm
 import pandas as pd
 import urllib.request, json 
 
-year = 2018
+year = 2022
 
 base_url = "https://api.esios.ree.es/archives/70/download_json?locale=es&date="
 ret = []
@@ -20,5 +20,5 @@ for date in tqdm(pd.date_range(start=f"{year}-01-01",end=f"{year}-12-31")):
             column_names = tmp_col_names
 
 ret = pd.DataFrame(ret, columns=column_names)
-ret.to_excel(f"pvpc_{year}.xlsx")
-
+ret.to_excel(f"data/pvpc_{year}.xlsx")
+ret.to_csv(f"data/pvpc_{year}.csv")
