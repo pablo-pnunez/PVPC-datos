@@ -1,6 +1,6 @@
 ## *Datos históricos del Precio Voluntario para el Pequeño Consumidor (PVPC)*
 
-Desde el 2018 a 2022 en carpeta ```data```.
+Desde el 1-4-2014 a 31-12-2022 en carpeta ```data``` separados por año.
 
 Para descargar otros periodos, utilizar el código ```Main.py```.
 
