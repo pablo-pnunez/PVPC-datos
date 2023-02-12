@@ -15,11 +15,11 @@ def download_data(date):
             column_names = tmp_col_names
 
 
-year = 2022
+year = 2023
 base_url = "https://api.esios.ree.es/archives/70/download_json?locale=es&date="
 ret = []
 column_names = []
-dates = pd.date_range(start=f"{year}-01-01",end=f"{year}-12-31")
+dates = pd.date_range(start=f"{year}-01-01",end=f"{year}-02-10")
 
 with ThreadPoolExecutor() as executor:
     for _ in tqdm(executor.map(download_data, dates), total=len(dates)):
