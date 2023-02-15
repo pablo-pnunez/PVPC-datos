@@ -19,14 +19,16 @@ year = 2023
 base_url = "https://api.esios.ree.es/archives/70/download_json?locale=es&date="
 ret = []
 column_names = []
-dates = pd.date_range(start=f"{year}-01-01",end=f"{year}-02-10")
+dates = pd.date_range(start=f"{year}-01-01",end=f"{year}-02-14")
+
 
 with ThreadPoolExecutor() as executor:
     for _ in tqdm(executor.map(download_data, dates), total=len(dates)):
         pass
 
+
 ret = pd.DataFrame(ret, columns=column_names)
-ret = ret.astype({"Dia":'datetime64[ns]'})
+ret['Dia'] = pd.to_datetime(ret['Dia'],  format = '%d/%m/%Y')
 ret = ret.sort_values(["Dia", "Hora"]).reset_index(drop=True)
 ret.to_csv(f"data/pvpc_{year}.csv", index=False)
 
